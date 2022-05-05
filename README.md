@@ -1,0 +1,2 @@
+# meteorjs-exercise
+MeteorJS Exercise
