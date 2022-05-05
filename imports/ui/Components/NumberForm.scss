@@ -1,0 +1,81 @@
+$orange: #d68b00;
+$grey: #393e46;
+$grey-light: #ebebeb;
+$grey-dark: #232323;
+
+$box-shadow: 2px 2px 8px 0px rgba(68, 68, 68, 0.75);
+
+.container {
+  background-color: $orange;
+  padding: 2rem 5%;
+
+  @media (min-width: 800px) {
+    padding: 2rem 15% 6rem 15%;
+  }
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 2rem;
+
+  @media (min-width: 1200px) {
+    margin: 0 4rem;
+  }
+
+  &__input {
+    margin: auto;
+    width: 100%;
+    color: $grey;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $grey-light;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    @media (min-width: 800px) {
+      width: 48%;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__label {
+    text-align: center;
+    width: 100%;
+    color: $grey-light;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+
+    @media (min-width: 800px) {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    color: $orange;
+    background-color: $grey-dark;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding: 0.75rem;
+    cursor: pointer;
+
+    @media (min-width: 800px) {
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    &:hover {
+      box-shadow: $box-shadow;
+    }
+  }
+}
